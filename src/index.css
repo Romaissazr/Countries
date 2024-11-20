@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+ body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background: hsl(0, 0%, 98%);
+  color: hsl(200, 15%, 8%);
+}
+
+body.dark {
+  background-color: hsl(207, 26%, 17%);
+  color: white;
+}
+
+body.dark input, 
+body.dark select, 
+body.dark .dropdown,
+body.dark .card {
+  background-color: hsl(209, 23%, 22%);
+  color: white;
+  border-color: hsl(209, 23%, 22%);
+}
+
+
+body.dark h1, body.dark h2, body.dark h3, body.dark p {
+  color: white;  
+}
